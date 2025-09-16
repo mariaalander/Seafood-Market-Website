@@ -1,0 +1,424 @@
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('fonts/EB_Garamond/static/EBGaramond-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gravitas One';
+  src: url('fonts/Gravitas_One/GravitasOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'EB Garamond Bold';
+  src: url('fonts/EB_Garamond/static/EBGaramond-Bold.ttf');
+}
+
+
+body {
+  font-size: 100%;
+  color: #031526;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 22px;
+  align-content: center;
+}
+
+h1 {
+  font-family: 'Gravitas One', sans-serif;
+  color: #f2f2f2;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #031526;
+  margin: 1em 0;
+}
+
+h3 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+}
+
+/* Nav */
+nav {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  display: flex;
+  background-color: #062d54;
+  padding: 1em 1rem;
+  align-items: center;
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  padding-left: 1em;
+}
+
+nav ul li {
+  align-items: center;
+  font-size: 1em;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+nav ul li:last-child a {
+  background-color: #f2f2f2;
+  color: #062d54;
+  border-radius: 2em;
+  padding: 0.6rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+nav>a {
+  font-family: 'Gravitas One', sans-serif;
+
+}
+
+.big_screen {
+  display: inline-block;
+}
+
+.small_screen {
+  display: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  font-weight: 600;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(168, 197, 225, 0.15);
+}
+
+.picture-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+}
+
+
+header {
+  background-image: url(../images/restaurant.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 20em 0;
+}
+
+main section {
+  padding: 2em 1em;
+}
+
+main h3 {
+  font-size: 1.2em;
+  margin: 1rem 0 0.5rem;
+}
+
+main p {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+section p {
+  margin: 4em 20em;
+}
+
+body {
+  text-align: center;
+}
+
+.btn,
+form button {
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #062d54;
+  color: #f2f2f2;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  margin: 2em auto;
+}
+
+.email {
+  background-color: #f2f2f2;
+  color: #031526;
+  margin-bottom: 2rem;
+}
+
+form button[type="submit"] {
+  background-color: #062d54;
+  color: #f2f2f2;
+  font-family: 'EB Garamond', serif;
+  border: none;
+  border-radius: 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(6, 45, 84, 0.08);
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus {
+  background-color: #f2f2f2;
+  color: #062d54;
+}
+
+footer {
+  background-color: #062d54;
+  color: #f2f2f2;
+  padding: 1rem 1rem 3rem 1rem;
+  margin-top: 0.5rem;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-family: 'EB Garamond Bold', serif;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  margin: 1rem 0 0.5em 0;
+  color: #f2f2f2;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #212931;
+  color: #242020;
+  padding: 0.2rem 0.8rem;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #dfdddd;
+}
+
+
+form label,
+form input {
+  display: block;
+  margin: 1em 0 0.3em 0.5em;
+  text-align: left;
+}
+
+form button[type="submit"] {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#wine_menu table {
+  table-layout: fixed;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#wine_menu h3 {
+  font-family: 'ED Gardamond Bold', serif;
+  font-size: 1.1em;
+  text-align: left;
+  margin: 0 0 0 5em;
+}
+
+
+#wine_menu td:nth-child(1) {
+  width: 15%;
+}
+
+#wine_menu td:nth-child(2) {
+  width: 65%;
+  text-align: left;
+}
+
+#wine_menu td:nth-child(3) {
+  width: 20%;
+}
+
+footer p a {
+  color: #f2f2f2;
+  text-decoration: underline;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+
+/* Mindre laptops och surfplattor liggande (≤ 1024px) */
+@media (max-width: 1024px) {
+
+  header a,
+  section a,
+  main a,
+  form button {
+    margin: 2em 19em 0 19em;
+  }
+
+
+  section p {
+    margin: 4em 11em;
+  }
+}
+
+/* Surfplattor stående och större mobiler (≤ 768px) */
+@media (max-width: 768px) {
+
+  header a,
+  section a,
+  main a,
+  form button {
+    margin: 2em 12em 0 12em;
+  }
+
+  section p {
+    margin: 4em 5em;
+  }
+}
+
+/* Små mobiler (≤ 480px) */
+@media (max-width: 566px) {
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  header {
+    padding: 10em 0;
+  }
+
+  header a,
+  section a,
+  main a,
+  form button {
+    margin: 1em 6em 0 5em;
+  }
+
+  section p {
+    margin: 4em 4em;
+  }
+
+  .small_screen {
+    display: inline-flex;
+    font-size: 2rem;
+  }
+
+  .big_screen {
+    display: none;
+  }
+
+
+  ul>li {
+    font-size: 0.9rem;
+    margin: 0.7em 0;
+  }
+
+  .picture-container {
+    margin: 0 0 0 0.5rem;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    padding-top: 0.5rem;
+  }
+
+  td {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 30%;
+    font-size: 0.9rem;
+  }
+
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+  }
+
+  td:nth-of-type(1):before {
+    content: "År";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Vin";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Pris";
+  }
+
+  #wine_menu h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  section p {
+    margin: 2em 1em;
+  }
+
+
+}
+
+@media(max-width: 444px) {
+  nav ul li a {
+    font-size: 1em;
+    text-transform: lowercase;
+  }
+}

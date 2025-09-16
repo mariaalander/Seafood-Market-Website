@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+  <script type="module" src="../js/index.js"></script>
+  <title>Seafood Market - Kontakt</title>
+
+  <!-- Inline style to ensure map is visible -->
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <a class="big_screen" href="../index.html">Seafood Market</a>
+    <a class="small_screen" href="../index.html">S</a>
+    <ul>
+      <li><a href="menu.html">MENY</a></li>
+      <li><a href="wine.html">VIN</a></li>
+      <li><a href="contact.html">KONTAKT</a></li>
+      <li><a href="booking.html">BOKA BORD</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Kontakt</h2>
+    <p>Har du frågor eller vill du boka bord? Kontakta oss gärna!</p>
+
+    <h2>Telefon</h2>
+    <p>08-123 456 78</p>
+
+    <h2>E-post</h2>
+    <p><a class="btn" href="mailto:info@seafoodmarket.se">info@seafoodmarket.se</a></p>
+
+    <h2>Hitta hit</h2>
+    <div id="map">Kartan kunde inte laddas. Se adressen ovan.</div>
+    (g => {
+      var h, a, k, p = "The Google Maps JavaScript API",
+        c = "google", l = "importLibrary", q = "__ib__", m = document, b = window;
+      b = b[c] || (b[c] = {});
+      var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+        u = () => h || (h = new Promise(async (f, n) => {
+          await (a = m.createElement("script"));
+          e.set("libraries", [...r] + "");
+          for (k in g)
+            e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+          e.set("callback", c + ".maps." + q);
+          a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+          d[q] = f;
+          a.onerror = () => h = n(Error(p + " could not load."));
+          a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+          m.head.append(a)
+        }));
+      d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] =
+        (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+    })({ key: "AIzaSyA9c4k-ErVgsj1m5GglPfoaXHHHs0uiG2Q", v: "weekly" });
+  </script>
+  </main>
+
+  <footer>
+    <h2>Adress</h2>
+    <p>Seafood Market<br>
+      Fiskargatan 12<br>
+      116 20 Stockholm<br>
+      info@seafoodmarket.se</p>
+
+    <h2>Öppettider</h2>
+    <p>Måndag - Fredag: 11:00 - 22:00<br>
+      Lördag - Söndag: 12:00 - 23:00</p>
+
+    <h2>Sociala medier</h2>
+    <p><a href="#">Instagram</a></p>
+    <p><a href="#">Facebook</a></p>
+  </footer>
+
+</body>
+
+</html>
